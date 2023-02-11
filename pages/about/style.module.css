@@ -1,0 +1,73 @@
+.aboutcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.aboutPart1 {
+    margin: 20px 0;
+    width: 500px;
+    height: 500px;
+    background-image: url("../../public/global/backgrounds/aboutPart1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutPart2 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 100px 10px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../../public/global/backgrounds/aboutPart2.png");
+}
+.aboutPart3{
+    background-image: url("../../public/global/backgrounds/aboutpart3.png");
+}
+
+.part2Content {
+    font-size: 20px;
+    font-family: xnamvac;
+    text-align: center;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1045px) {
+    .aboutPart1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .aboutPart2 {
+       
+        width: 400px;
+        height: 400px;
+    }
+    .part2Content{
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .aboutcontainer {
+       align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (max-width: 383px) {
+    .part2Content{
+        font-size: 15px;
+    }
+}

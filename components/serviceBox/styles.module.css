@@ -1,0 +1,47 @@
+.serviceContainer{
+    width:100%;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.firstBackground{
+    background-image: url("../../public/global/service01.png");
+    height: 180px;
+}
+.secondBackground{
+    height: 180px;
+    background-image: url("../../public/global/service02.png");
+}
+
+.service{
+    position: relative;
+    margin: 5px;
+    width: 400px;
+    border:2px solid orange;
+    background-repeat: no-repeat;
+    background-position-x:left ;
+}
+
+
+/* headerContainer */
+.headerContainer{
+    position: absolute;
+    bottom: 0;
+    border-top:2px solid orange;    
+    border-right:2px solid orange;    
+    border-left: 2px solid orange;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgba(255, 166, 0, 0.521);
+}
+.headerContainer h2{
+    color:black;
+    padding:6px;
+    font-size: 20px;
+    font-family: "bebas";
+}

@@ -1,0 +1,90 @@
+.header{
+    width:100%;
+    height:700px;
+    position: relative;
+    z-index: -400;
+}
+.colorElement{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translate(0,-50%);
+    background-color: #8100cb;
+    height: 80%;
+    width: 60%;
+}
+
+.headerBody{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-40%,-50%);
+    z-index: 500;
+}
+
+.logo{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #b68bc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoContainer{
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+    background-image: url("../public/global/poster.png");
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    left:-10%;
+    background-color: white;
+    border-radius: 10px;
+    width:400px;
+    height: 400px;
+}
+
+.titleText{
+    text-align: end;
+    font-family: "vrcnagir_am";
+    width: 250px;
+    padding-right: 15px;
+}
+.titleText h1{
+    color: orange;
+    font-size: 45px;
+}
+.titleText a{
+    font-size: 22px;
+    color: #8100cb;
+}
+
+@media only screen and (max-width: 1015px) {
+    .logo {
+     width:450px;
+     height:450px;
+     position: relative;
+     left:12%;
+    }
+    .logoContainer{
+        width: 350px;
+        height: 350px;
+    }
+    .title{
+        width:300px;
+        height: 300px;
+        left:2%;
+    }
+  }
